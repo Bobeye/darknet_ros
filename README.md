@@ -50,6 +50,8 @@ This means that you need to check the compute capability (version) of your GPU. 
 
     -O3 -gencode arch=compute_62,code=sm_62
 
+If running into warning of "implicit declaration of function ‘cvRound’", try https://stackoverflow.com/questions/42918747/yolo-c-compilation-failure-with-debug-1/46808785#46808785
+
 ### Download weights
 
 The yolo-voc.weights and tiny-yolo-voc.weights are downloaded automatically in the CMakeLists.txt file. If you need to download them again, go into the weights folder and download the two pre-trained weights from the VOC data set:
